@@ -20,8 +20,8 @@
           pagination: '.swiper-pagination',
           slidesPerView:1,
           autoplay:2000,
-          observer:true,
-          observeParents:true,
+//          observer:true,
+//          observeParents:true,
           spaceBetween:30,
           loop:true
         },
@@ -54,7 +54,7 @@
     overflow: hidden
     width: 100%
     height: 0
-    padding-bottom: 37.5%
+    padding-bottom: 24.5%
     .swiper-image
       width: 100%;
 

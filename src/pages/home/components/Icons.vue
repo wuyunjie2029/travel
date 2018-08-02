@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="swiperOption">
       <swiper-slide v-for="(page,index) of pages" :key="page.index">
         <div class="icon" v-for="item of page" :key="item.id">
           <div class="icon-img">
@@ -16,9 +16,13 @@
 
 <script type="text/ecmascript-6">
   export default{
+
     name: 'HomeIcons',
     data () {
       return {
+        swiperOption:{
+          autoplay:false
+        },
         iconList:[{
           id:'0001',
           imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
